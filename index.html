@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+  <body>
+    <div class="container">
+        <!-- Barra de navegación -->
+        <nav class="navbar">
+          <div class="d-flex mx-auto">
+            <button class="btn btn-dark me-4 custom-button rounded-0" type="button">Inicio</button>
+            <button class="btn btn-dark ms-4 me-4 custom-button rounded-0" type="button">Acerca</button>
+            <button class="btn btn-dark ms-4 me-4 custom-button rounded-0" type="button">Servicios</button>
+            <button class="btn btn-dark ms-4 custom-button rounded-0" type="button">Contacto</button>
+          </div>
+        </nav>
+
+        <div class="jumbotron jumbotron-fluid bg-dark custom-button text-white text-center">
+          <div class="container">
+            <h1 class="display-4">Desarrollador web</h1>
+            <p class="lead">Dominique Marin Vicente</p>
+            <p>Conoce acerca de las tecnologías que utilizo.</p>
+          </div>
+        </div>
+
+        <div class="container mt-5">
+          <!-- Primera fila con 1 carta -->
+          <div class="row justify-content-center">
+              <div class="col-12 col-md-3 mb-1">
+                  <div class="card img1 hov" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                      <img src="https://uploads-ssl.webflow.com/6458b0674e8b4248673ee870/6459ee68fc955e7252e646a7_monitor70_blue.svg" class="card-img-top" alt="Imagen 1">
+                  </div>
+              </div>
+          </div>
+      
+          <!-- Segunda fila con 2 cartas -->
+          <div class="row justify-content-around">
+              <div class="col-12 col-sm-4 col-md-3 mt-2 mb-3">
+                  <div class="card img2 hov" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+                      <img src="https://uploads-ssl.webflow.com/6458b0674e8b4248673ee870/6459ee68fc955e7252e646a7_monitor70_blue.svg" class="card-img-top" alt="Imagen 2">
+                  </div>
+              </div>
+              <div class="col-12 col-sm-4 col-md-3 mt-2 mb-3">
+                  <div class="card img3 hov" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                      <img src="https://uploads-ssl.webflow.com/6458b0674e8b4248673ee870/6459ee68fc955e7252e646a7_monitor70_blue.svg" class="card-img-top" alt="Imagen 3">
+                  </div>
+              </div>
+          </div>
+      
+          <!-- Tercera fila con 2 cartas -->
+          <div class="row justify-content-between">
+              <div class="col-12 col-sm-4 col-md-3 mt-2 mb-">
+                  <div class="card img4 hov" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+                      <img src="https://uploads-ssl.webflow.com/6458b0674e8b4248673ee870/6459ee68fc955e7252e646a7_monitor70_blue.svg" class="card-img-top" alt="Imagen 4">
+                  </div>
+              </div>
+              <div class="col-12 col-sm-4 col-md-3 mt-2 mb-2">
+                  <div class="card img5 hov" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">
+                      <img src="https://uploads-ssl.webflow.com/6458b0674e8b4248673ee870/6459ee68fc955e7252e646a7_monitor70_blue.svg" class="card-img-top" alt="Imagen 5">
+                  </div>
+              </div>
+          </div>
+      
+          <!-- Cuarta fila con 2 cartas -->
+          <div class="row justify-content-between">
+              <div class="col-12 col-sm-4 col-md-3 mt-1 mb-1">
+                  <div class="card img6 hov" data-bs-toggle="modal" data-bs-target="#staticBackdrop5">
+                      <img src="https://uploads-ssl.webflow.com/6458b0674e8b4248673ee870/6459ee68fc955e7252e646a7_monitor70_blue.svg" class="card-img-top" alt="Imagen 6">
+                  </div>
+              </div>
+              <div class="col-12 col-sm-4 col-md-3 mt-1 mb-1">
+                  <div class="card img7 hov" data-bs-toggle="modal" data-bs-target="#staticBackdrop6">
+                      <img src="https://uploads-ssl.webflow.com/6458b0674e8b4248673ee870/6459ee68fc955e7252e646a7_monitor70_blue.svg" class="card-img-top" alt="Imagen 7">
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      
+  </div>
+        
+  <!-- Modal 1-->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Tecnologia 1</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, delectus alias mollitia in repellendus error suscipit exercitationem quos distinctio perspiciatis consequuntur et architecto aut ut molestiae at aspernatur aliquid temporibus!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark custom-button" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal 2-->
+  <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Tecnologia 2</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, delectus alias mollitia in repellendus error suscipit exercitationem quos distinctio perspiciatis consequuntur et architecto aut ut molestiae at aspernatur aliquid temporibus!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark custom-button" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal 3-->
+  <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Tecnologia 3</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, delectus alias mollitia in repellendus error suscipit exercitationem quos distinctio perspiciatis consequuntur et architecto aut ut molestiae at aspernatur aliquid temporibus!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark custom-button" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal 4-->
+  <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Tecnologia 4</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, delectus alias mollitia in repellendus error suscipit exercitationem quos distinctio perspiciatis consequuntur et architecto aut ut molestiae at aspernatur aliquid temporibus!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark custom-button" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal 5-->
+  <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Tecnologia 5</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, delectus alias mollitia in repellendus error suscipit exercitationem quos distinctio perspiciatis consequuntur et architecto aut ut molestiae at aspernatur aliquid temporibus!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark custom-button" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- Modal 6-->
+   <div class="modal fade" id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Tecnologia 6</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, delectus alias mollitia in repellendus error suscipit exercitationem quos distinctio perspiciatis consequuntur et architecto aut ut molestiae at aspernatur aliquid temporibus!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark custom-button" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- Modal 7-->
+   <div class="modal fade" id="staticBackdrop6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Tecnologia 7</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, delectus alias mollitia in repellendus error suscipit exercitationem quos distinctio perspiciatis consequuntur et architecto aut ut molestiae at aspernatur aliquid temporibus!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark custom-button" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      
+        <!-- Footer -->
+        <footer class="footer py-4">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-4 col-md-4 text-center mt-1">
+                <!-- Contenido alineado al centro en pantallas grandes y tabletas -->
+                Generation 2023<span>©</span>
+              </div>
+              <div class="col-lg-4 col-md-4 text-center">
+                <!-- Contenido alineado al centro en pantallas grandes y tabletas -->
+                Dominique Marin Vicente
+              </div>
+              <div class="col-lg-4 col-md-4 text-center">
+                <!-- Contenido alineado al centro en pantallas grandes y tabletas -->
+                <div class="footer_socials">
+                  <a class="footer_socials" href="https://www.facebook.com/DoMo.Marin/">
+                    <img class="pixelated" src="./img/facebook.png" alt="Facebook">
+                  </a>
+                  <a class="footer_socials" href="https://www.linkedin.com/in/dominique-marin-vicente-b68a031bb/">
+                    <img class="pixelated" src="./img/linkedin.png" alt="LinkedIn">
+                  </a>
+                  <a class="footer_socials" href="https://github.com/DominiqueMv">
+                    <img class="pixelated" src="./img/github-sign.png" alt="GitHub">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        
+        
+        
+      </div>
+      
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
