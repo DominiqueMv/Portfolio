@@ -1,14 +1,19 @@
 body{
     font-family: 'Noto Sans Mono', monospace;
-    font-size: 20px;
 }
+/*botones de social media*/
 .pixelated{
     width: 20px;
 }
+.mergin{
+    margin-right: 1.5em;
+    margin-left: 1.5em;
+}
+/* card*/
 .card {
     position: relative;
     width: 100%;
-    padding-top: 56.25%; /* 16:9 aspect ratio (divide 9 by 16 and multiply by 100) */
+    padding-top: 56.25%;
   }
 
   .card img {
@@ -17,13 +22,22 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Para asegurarse de que la imagen llene completamente el contenedor */
+    object-fit: cover;
   }
-
+.cardmargin{
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+.cardmargin2{
+    margin-top: 0.5rem;
+    margin-bottom: 1.25rem;
+}
+/*borde negro y relleno blanco*/
 .custom-button{
     box-shadow: inset 0 0 0 1px #000, inset 0 0 0 3px #fff;
 }
 
+/*posicion de la imagenes y bordes.*/
 .img1{
     box-shadow: 0 0 20px 6px #FA79FD;
 }
@@ -64,6 +78,19 @@ body{
 
 /* resolución movil */
 @media (max-width:576px) {
+.mergin{
+    margin-right: 6px;
+    margin-left: 0;
+}
+.cardmargin{
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+.cardmargin2{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+/* se eliminan las rotaciones de la imagenes par version movil*/
     .img1{
         box-shadow: 0 0 20px 6px #FA79FD;
     }
