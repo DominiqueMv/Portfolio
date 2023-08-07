@@ -1,5 +1,11 @@
 body{
     font-family: 'Noto Sans Mono', monospace;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    flex: 1;
 }
 /*botones de social media*/
 .pixelated{
