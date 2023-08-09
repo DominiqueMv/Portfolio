@@ -26,7 +26,7 @@ const validarEmail = (email) => {
 };
 
 const validarTelefono = (telefono) => {
-    const expresionRegular = /^[0-9]{10}$/;
+    const expresionRegular =/^(?!.*(\d)\1{4,})\d{10}$/;
     return expresionRegular.test(telefono);
 };
 
