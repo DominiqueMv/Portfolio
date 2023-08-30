@@ -10,10 +10,19 @@ hr.hrcolor{
 .bgcontent{
   background-color: #000;
 }
-p{
+.article-container p{
   font-family: 'Amatic SC', cursive;
   font-size: 1.5rem;
 }
+.article-container h1,
+.article-container h2,
+.article-container h3,
+.article-container h4,
+.article-container h5,
+.article-container h6 {
+  font-family: 'Amatic SC', cursive;
+}
+
 .main{
     flex: 1;
 }
@@ -70,15 +79,19 @@ a{
 }
 /* card*/
 .card {
+  background-color: #000;
     position: relative;
     width: 100%;
     padding-top: 56.25%;
   }
 
   .card img {
+    
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 40px;
+    left: 105px;
+    max-width: 90px;
+    max-height: 90px;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -98,48 +111,48 @@ a{
 
 /*posicion de la imagenes y bordes.*/
 .img1{
-    box-shadow: 0 0 20px 6px #353335;
+    box-shadow: 0 0 20px 6px #000000;
 }
 
 .img2{
     transform: rotate(-4deg);
-    box-shadow: 0 0 20px 6px #353335;
+    box-shadow: 0 0 20px 6px #000000;
 }
 
 .img3{
     transform: rotate(4deg);
-    box-shadow: 0 0 20px 6px #353335;
+    box-shadow: 0 0 20px 6px #000000;
 }
 
 .img4{
-    box-shadow: 0 0 20px 6px #353335;
+    box-shadow: 0 0 20px 6px #000000;
     transform: rotate(-7deg)
 }
 
 .img5{
     transform: rotate(7deg);
-    box-shadow: 0 0 20px 6px #353335;
+    box-shadow: 0 0 20px 6px #000000;
 }
 
 .img6{
     transform: rotate(-7deg);
-    box-shadow: 0 0 20px 6px #353335;
+    box-shadow: 0 0 20px 6px #000000;
 }
 
 .img7{
     transform: rotate(7deg);
-    box-shadow: 0 0 20px 6px #353335;
+    box-shadow: 0 0 20px 6px #000000;
 }
 
 .hov:hover{
-    box-shadow: 0 0 25px 6px rgba(82, 255, 0, .7);
+    box-shadow: 0 0 25px 6px rgba(218, 241, 2, 0.7);
 }
 
 /* resolución movil */
-@media (max-width:576px) {
-    .custom-button{
-        font-size: 0.6rem;
-    }
+@media (min-width:320px) and (max-width:374px){
+.custom-button{
+    font-size: 0.8rem;
+}
 .mergin{
     margin-right: 6px;
     margin-left: 0;
@@ -152,39 +165,206 @@ a{
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
+
 /* se eliminan las rotaciones de la imagenes par version movil*/
     .img1{
-        box-shadow: 0 0 20px 6px #FA79FD;
+        box-shadow: 0 0 20px 6px #000000;
     }
     
     .img2{
         transform: none;
-        box-shadow: 0 0 20px 6px #FA79FD;
+        box-shadow: 0 0 20px 6px #000000;
     }
     
     .img3{
         transform: none;
-        box-shadow: 0 0 20px 6px #FA79FD;
+        box-shadow: 0 0 20px 6px #000000;
     }
     
     .img4{
-        box-shadow: 0 0 20px 6px #FA79FD;
+        box-shadow: 0 0 20px 6px #000000;
         transform: none;
         margin-top: 5px;
     }
     
     .img5{
         transform: none;
-        box-shadow: 0 0 20px 6px #FA79FD;
+        box-shadow: 0 0 20px 6px #000000;
     }
     
     .img6{
         transform: none;
-        box-shadow: 0 0 20px 6px #FA79FD;
+        box-shadow: 0 0 20px 6px #000000;
     }
     
     .img7{
         transform: none;
-        box-shadow: 0 0 20px 6px #FA79FD;
+        box-shadow: 0 0 20px 6px #000000;
     }
 }
+/* segunda resolucion de movil */
+@media (min-width: 375px) and (max-width:575px){
+  .custom-button{
+    font-size: 10.2px;
+}
+.card img {
+    
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    max-width: 150px;
+    max-height: 150px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.img1{
+    box-shadow: 0 0 20px 6px #000000;
+}
+
+.img2{
+    transform: none;
+    box-shadow: 0 0 20px 6px #000000;
+}
+
+.img3{
+    transform: none;
+    box-shadow: 0 0 20px 6px #000000;
+}
+
+.img4{
+    box-shadow: 0 0 20px 6px #000000;
+    transform: none;
+    margin-top: 5px;
+}
+
+.img5{
+    transform: none;
+    box-shadow: 0 0 20px 6px #000000;
+}
+
+.img6{
+    transform: none;
+    box-shadow: 0 0 20px 6px #000000;
+}
+
+.img7{
+    transform: none;
+    box-shadow: 0 0 20px 6px #000000;
+}
+}
+/*tercera resolucion movil*/
+@media (min-width: 425px) and (max-width:576px){
+  .custom-button{
+    font-size: 12.2px
+}
+.card img {
+    
+    position: absolute;
+    top: 30px;
+    left: 125px;
+    max-width: 150px;
+    max-height: 150px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.img1{
+    box-shadow: 0 0 20px 6px #000000;
+}
+
+.img2{
+    transform: none;
+    box-shadow: 0 0 20px 6px #000000;
+}
+
+.img3{
+    transform: none;
+    box-shadow: 0 0 20px 6px #000000;
+}
+
+.img4{
+    box-shadow: 0 0 20px 6px #000000;
+    transform: none;
+    margin-top: 5px;
+}
+
+.img5{
+    transform: none;
+    box-shadow: 0 0 20px 6px #000000;
+}
+
+.img6{
+    transform: none;
+    box-shadow: 0 0 20px 6px #000000;
+}
+
+.img7{
+    transform: none;
+    box-shadow: 0 0 20px 6px #000000;
+}
+}
+
+/*resolución de tablet*/
+@media (min-width: 577px) and (max-width:992px){
+  .card img {
+    
+    position: absolute;
+    top: 13px;
+    left: 45px;
+    max-width: 60px;
+    max-height: 60px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+/*resolución de laptop*/
+@media (min-width: 992px) and (max-width:1199px){
+  .card img {
+    
+    position: absolute;
+    top: 25px;
+    left: 70px;
+    max-width: 70px;
+    max-height: 70px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+/*Animacion de boton*/
+button.learn-more {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+ }
+ button.learn-more::before {
+  -webkit-box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
+  box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
+  -webkit-transform: translate3d(0, 0.75em, -1em);
+  transform: translate3d(0, 0.75em, -1em);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+ }
+ button.learn-more:hover{
+  -webkit-transform: translate(0, 0.25em);
+  transform: translate(0, 0.25em);
+ }
+ button.learn-more:hover::before {
+  -webkit-box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+  box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+  -webkit-transform: translate3d(0, 0.5em, -1em);
+  transform: translate3d(0, 0.5em, -1em);
+ }
+ button.learn-more:active {
+  background: #ffe9e9;
+  -webkit-transform: translate(0em, 0.75em);
+  transform: translate(0em, 0.75em);
+ }
+ button.learn-more:active::before {
+  -webkit-box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+  box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+  -webkit-transform: translate3d(0, 0, -1em);
+  transform: translate3d(0, 0, -1em);
+ }
