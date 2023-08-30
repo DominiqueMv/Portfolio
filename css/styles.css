@@ -4,6 +4,16 @@ body{
     display: flex;
     flex-direction: column;
 }
+hr.hrcolor{ 
+  border: 2px solid white;
+}
+.bgcontent{
+  background-color: #000;
+}
+p{
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.5rem;
+}
 .main{
     flex: 1;
 }
@@ -12,25 +22,9 @@ a{
     color: #fff;
     text-decoration: none;
 }
-/* Jumbotron Glitch */
-.glitch{
-    animation: wobble 1s linear infinite;
-  }
-  
-  @keyframes wobble{
-    0%, 100% {
-      transform: translate(0);
-    }
-    25% {
-      transform: translate(-2px, 2px);
-    }
-    50% {
-      transform: translate(2px, -2px);
-    }
-    75% {
-      transform: translate(-2px, 2px);
-    }
-  }
+
+/* Jumbotron */
+
 
   /*Squiggly*/
   @keyframes squiggly-anim {
@@ -59,6 +53,12 @@ a{
     animation: squiggly-anim .7s linear infinite;
   }
   
+  /* article */
+  .articlebg{
+    
+    color: #fff;
+  }
+ 
 
 /*botones de social media*/
 .pixelated{
@@ -98,37 +98,37 @@ a{
 
 /*posicion de la imagenes y bordes.*/
 .img1{
-    box-shadow: 0 0 20px 6px #FA79FD;
+    box-shadow: 0 0 20px 6px #353335;
 }
 
 .img2{
     transform: rotate(-4deg);
-    box-shadow: 0 0 20px 6px #FA79FD;
+    box-shadow: 0 0 20px 6px #353335;
 }
 
 .img3{
     transform: rotate(4deg);
-    box-shadow: 0 0 20px 6px #FA79FD;
+    box-shadow: 0 0 20px 6px #353335;
 }
 
 .img4{
-    box-shadow: 0 0 20px 6px #FA79FD;
+    box-shadow: 0 0 20px 6px #353335;
     transform: rotate(-7deg)
 }
 
 .img5{
     transform: rotate(7deg);
-    box-shadow: 0 0 20px 6px #FA79FD;
+    box-shadow: 0 0 20px 6px #353335;
 }
 
 .img6{
     transform: rotate(-7deg);
-    box-shadow: 0 0 20px 6px #FA79FD;
+    box-shadow: 0 0 20px 6px #353335;
 }
 
 .img7{
     transform: rotate(7deg);
-    box-shadow: 0 0 20px 6px #FA79FD;
+    box-shadow: 0 0 20px 6px #353335;
 }
 
 .hov:hover{
@@ -188,28 +188,3 @@ a{
         box-shadow: 0 0 20px 6px #FA79FD;
     }
 }
-h1.wiggle {
-    font-size: 36px;
-    font-family: sans-serif;
-    display: inline-block;
-  }
-  
-  @keyframes wiggle-animation {
-    0%, 100% {
-      transform: translate(0);
-    }
-    25% {
-      transform: translate(-2px, 2px);
-    }
-    50% {
-      transform: translate(2px, -2px);
-    }
-    75% {
-      transform: translate(-2px, 2px);
-    }
-  }
-  
-  .wiggle span {
-    display: inline-block;
-    animation: wiggle-animation 0.1s infinite;
-  }

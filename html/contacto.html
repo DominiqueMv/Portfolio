@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -20,18 +20,18 @@
       <!-- Barra de navegación -->
       <nav class="navbar container-fluid">
         <div class="d-flex mx-auto">
-          <a href="../index.html"><button class="btn btn-dark mergin custom-button rounded-0"
+          <a href="../index.html"><button class="btn btn-dark bgcontent mergin custom-button rounded-0 text-white"
               type="button">Inicio</button></a>
-          <a href="./acerca.html"><button class="btn btn-dark mergin custom-button rounded-0"
+          <a href="./acerca.html"><button class="btn btn-dark bgcontent mergin custom-button rounded-0 text-white"
               type="button">Acerca</button></a>
-          <a href="./servicios.html"><button class="btn btn-dark mergin custom-button rounded-0"
+          <a href="./servicios.html"><button class="btn btn-dark bgcontent mergin custom-button rounded-0 text-white"
               type="button">Servicios</button></a>
-          <a href="#"><button class="btn btn-sm btn-dark mergin custom-button rounded-0"
+          <a href="#"><button class="btn btn-sm btn-dark bgcontent mergin custom-button rounded-0 text-white"
               type="button">Contacto</button></a>
         </div>
       </nav>
 
-      <div class="jumbotron jumbotron-fluid bg-dark custom-button text-white text-center">
+      <div class="jumbotron jumbotron-fluid bgcontent custom-button text-white text-center">
         <div class="container-fluid">
           <h1 class="display-4 squiggly">Desarrollador web</h1>
           <p class="lead squiggly">Dominique Marin Vicente</p>
@@ -44,7 +44,6 @@
   <main class="main">
     <!-- formulario -->
     <div class="container  d-flex justify-content-center align-items-center">
-      <div class="">
 
         <form onsubmit="return false" id="form">
           <h1 class="text-center">Ponte en contacto conmigo!</h1>
@@ -62,7 +61,7 @@
             <div class="mb-3">
               <textarea class="form-control rounded-0 mb-2 custom-button" id="message" name="message" rows="3"
                 placeholder="Escribe aquí tu mensaje..." required></textarea>
-              <button class=" btn btn-dark custom-button rounded-0 mb-2" id="send" name="send"
+              <button class=" btn btn-dark bgcontent custom-button rounded-0 mb-2 text-white" id="send" name="send"
                 type="button">Enviar</button>
               <div class="alert alert-secondary fade show rounded-0" style="display:none;" role="alert"
                 id="alertValidaciones">
@@ -71,7 +70,6 @@
             </div>
           </div>
         </form>
-      </div>
     </div>
   </main>
   <div hidden>
