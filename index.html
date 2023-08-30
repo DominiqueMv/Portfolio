@@ -20,24 +20,28 @@
       <!-- Barra de navegación -->
       <nav class="navbar container-fluid">
         <div class="d-flex mx-auto">
-          <button class="btn btn-sm btn-dark mergin custom-button rounded-0" type="button">Inicio</button>
-          <button class="btn btn-dark mergin custom-button rounded-0" type="button">Acerca</button>
-          <button class="btn btn-dark mergin custom-button rounded-0" type="button">Servicios</button>
-          <button class="btn btn-dark mergin custom-button rounded-0" type="button">Contacto</button>
+          <a href="#"><button class="btn btn-sm btn-dark mergin custom-button rounded-0"
+              type="button">Inicio</button></a>
+          <a href="/html/acerca.html"><button class="btn btn-dark mergin custom-button rounded-0"
+              type="button">Acerca</button></a>
+          <a href="/html/servicios.html"><button class="btn btn-dark mergin custom-button rounded-0"
+              type="button">Servicios</button></a>
+          <a href="/html/contacto.html"><button class="btn btn-dark mergin custom-button rounded-0"
+              type="button">Contacto</button></a>
         </div>
       </nav>
 
       <div class="jumbotron jumbotron-fluid bg-dark custom-button text-white text-center">
         <div class="container-fluid">
-          <h1 class="display-4">Desarrollador web</h1>
-          <p class="lead">Dominique Marin Vicente</p>
-          <p class="pb-2">Conoce acerca de las tecnologías que utilizo.</p>
+          <h1 class="display-4  squiggly">Desarrollador web</h1>
+          <p class="lead  squiggly">Dominique Marin Vicente</p>
+          <p class="pb-2 squiggly">Conoce acerca de las tecnologías que utilizo.</p>
         </div>
       </div>
     </header>
-    </div>
+  </div>
+  <main class="main">
     <div class="container">
-    <main class="main">
       <div class="mt-5">
         <!-- Primera fila con 1 carta -->
         <div class="row justify-content-center">
@@ -104,7 +108,37 @@
           </div>
         </div>
       </div>
-    </main>
+    </div>
+  </main>
+  <div hidden>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <defs>
+
+
+        <filter id="squiggly-0">
+          <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="0" />
+          <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="6" />
+        </filter>
+        <filter id="squiggly-1">
+          <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="1" />
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+        </filter>
+
+        <filter id="squiggly-2">
+          <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="2" />
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+        </filter>
+        <filter id="squiggly-3">
+          <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="3" />
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+        </filter>
+
+        <filter id="squiggly-4">
+          <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="4" />
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+        </filter>
+      </defs>
+    </svg>
   </div>
 
   <!-- Modal 1-->
@@ -122,7 +156,7 @@
           aliquid temporibus!
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-dark custom-button rounded-0" data-bs-dismiss="modal" >Cerrar</button>
+          <button type="button" class="btn btn-dark custom-button rounded-0" data-bs-dismiss="modal">Cerrar</button>
         </div>
       </div>
     </div>
@@ -248,6 +282,7 @@
     </div>
   </div>
 
+
   <!-- Footer -->
   <footer class="footer py-4">
     <div class="container">
@@ -277,9 +312,10 @@
 
 
 
+
   </div>
 
-
+  <script src="/js/wiggletext.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>

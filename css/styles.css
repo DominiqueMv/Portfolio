@@ -1,5 +1,5 @@
 body{
-    font-family: 'Noto Sans Mono', monospace;
+  font-family: 'Noto Sans', sans-serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -7,6 +7,59 @@ body{
 .main{
     flex: 1;
 }
+/* Navbar */
+a{
+    color: #fff;
+    text-decoration: none;
+}
+/* Jumbotron Glitch */
+.glitch{
+    animation: wobble 1s linear infinite;
+  }
+  
+  @keyframes wobble{
+    0%, 100% {
+      transform: translate(0);
+    }
+    25% {
+      transform: translate(-2px, 2px);
+    }
+    50% {
+      transform: translate(2px, -2px);
+    }
+    75% {
+      transform: translate(-2px, 2px);
+    }
+  }
+
+  /*Squiggly*/
+  @keyframes squiggly-anim {
+    0% {
+      filter: url('#squiggly-0');
+    }
+  
+    25% {
+      filter: url('#squiggly-1');
+    }
+  
+    50% {
+      filter: url('#squiggly-2');
+    }
+  
+    75% {
+      filter: url('#squiggly-3');
+    }
+  
+    100% {
+      filter: url('#squiggly-4');
+    }
+  }
+  
+  .squiggly {
+    animation: squiggly-anim .7s linear infinite;
+  }
+  
+
 /*botones de social media*/
 .pixelated{
     width: 20px;
@@ -84,6 +137,9 @@ body{
 
 /* resolución movil */
 @media (max-width:576px) {
+    .custom-button{
+        font-size: 0.6rem;
+    }
 .mergin{
     margin-right: 6px;
     margin-left: 0;
@@ -132,3 +188,28 @@ body{
         box-shadow: 0 0 20px 6px #FA79FD;
     }
 }
+h1.wiggle {
+    font-size: 36px;
+    font-family: sans-serif;
+    display: inline-block;
+  }
+  
+  @keyframes wiggle-animation {
+    0%, 100% {
+      transform: translate(0);
+    }
+    25% {
+      transform: translate(-2px, 2px);
+    }
+    50% {
+      transform: translate(2px, -2px);
+    }
+    75% {
+      transform: translate(-2px, 2px);
+    }
+  }
+  
+  .wiggle span {
+    display: inline-block;
+    animation: wiggle-animation 0.1s infinite;
+  }

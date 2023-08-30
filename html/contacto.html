@@ -20,18 +20,22 @@
       <!-- Barra de navegación -->
       <nav class="navbar container-fluid">
         <div class="d-flex mx-auto">
-          <button class="btn btn-dark mergin custom-button rounded-0" type="button">Inicio</button>
-          <button class="btn btn-dark mergin custom-button rounded-0" type="button">Acerca</button>
-          <button class="btn btn-dark mergin custom-button rounded-0" type="button">Servicios</button>
-          <button class="btn btn-sm btn-dark mergin custom-button rounded-0" type="button">Contacto</button>
+          <a href="../index.html"><button class="btn btn-dark mergin custom-button rounded-0"
+              type="button">Inicio</button></a>
+          <a href="/html/acerca.html"><button class="btn btn-dark mergin custom-button rounded-0"
+              type="button">Acerca</button></a>
+          <a href="/html/servicios.html"><button class="btn btn-dark mergin custom-button rounded-0"
+              type="button">Servicios</button></a>
+          <a href="/html/contacto.html"><button class="btn btn-sm btn-dark mergin custom-button rounded-0"
+              type="button">Contacto</button></a>
         </div>
       </nav>
 
       <div class="jumbotron jumbotron-fluid bg-dark custom-button text-white text-center">
         <div class="container-fluid">
-          <h1 class="display-4">Desarrollador web</h1>
-          <p class="lead">Dominique Marin Vicente</p>
-          <p class="pb-2">Contactame!</p>
+          <h1 class="display-4 squiggly">Desarrollador web</h1>
+          <p class="lead squiggly">Dominique Marin Vicente</p>
+          <p class="pb-2 squiggly">Contactame!</p>
         </div>
       </div>
     </header>
@@ -70,6 +74,36 @@
       </div>
     </div>
   </main>
+  <div hidden>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <defs>
+
+
+        <filter id="squiggly-0">
+          <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="0" />
+          <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="6" />
+        </filter>
+        <filter id="squiggly-1">
+          <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="1" />
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+        </filter>
+
+        <filter id="squiggly-2">
+          <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="2" />
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+        </filter>
+        <filter id="squiggly-3">
+          <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="3" />
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+        </filter>
+
+        <filter id="squiggly-4">
+          <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="4" />
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+        </filter>
+      </defs>
+    </svg>
+  </div>
 
   <!-- Footer -->
   <footer class="footer py-4">
